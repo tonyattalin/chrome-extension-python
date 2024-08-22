@@ -2,7 +2,7 @@ import os
 import json
 
 def get_cache_file_path() -> str:
-    dr = os.path.abspath(os.path.join(os.path.dirname(__file__),  'package_storage.json'))
+    dr = os.path.abspath(os.path.join(os.getcwd(),  'package_storage.json'))
     return dr
 
 class localStoragePyStorageException(Exception):
